@@ -206,6 +206,14 @@ What if they were arranged differently than in a grid?
 What if they could be represented in a completely different form?
 How can pixel data (color, brightness, position) drive visual generation?
 
+For the pixel project I got the idea from an influencer on instagram. First step is using a picture of someone you would hang on your wall.
+
+<img src="/meryl.png" width="800"/>
+
+Third and fourth step is rearange the pixels.
+
+<img src="/meryl(2).png" width="800"/>
+
 # Project Idea
 
 ## Mind Garden
