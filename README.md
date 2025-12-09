@@ -289,6 +289,12 @@ how the plant is drawn (chaotic / balanced / smooth)
 how fast and in what direction it grows
 This makes the sketch feel alive — each emotion keeps evolving on its own.
 
+## Second Prototype
+
+With these adjustments current state looks like this:
+
+{% raw %} <iframe src="https://editor.p5js.org/trisaratops2.0/full/qzwCd8oHs" width="100%" height="450" frameborder="no"></iframe> {% endraw %}
+
 ### Improvements on the Emotinal Logic
 
 **Weigted emotional dictionary**
@@ -311,19 +317,18 @@ if (word.includes("happy")) return 0.9;
 **Intensifiers**
 Giving Adjectives more value and letting them affecting the plant:
 
-
 if (word.includes("very")) score += 0.1;
 if (word.includes("slightly")) score -= 0.1;
 
-With these adjustments current state looks like this:
-
-{% raw %} <iframe src="https://editor.p5js.org/trisaratops2.0/full/qzwCd8oHs" width="100%" height="450" frameborder="no"></iframe> {% endraw %}
-
-Now the machine reconises adjectives.
+## Prototype 3
 
 ### Improvments of Visuals
 
+## Prototype 4
+
 ### Improvment of Mood Categories
+
+## Prototype 5
 
 ### Improvment User Interactions
 
