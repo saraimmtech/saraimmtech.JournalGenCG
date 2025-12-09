@@ -22,11 +22,11 @@ Two historical examples particularly inspired me: Untitled by Vera Molnár (1985
 
   - untiteld, Vera Molnár, 1985
 
-    <img src="vera.png" width="400" />
+    <img src="MediaPNG/vera.png" width="400" />
     
   - Substrate - Jared Tarbell, 2003
     
-    <img src="/jared.png" width="400"/>
+    <img src="MediaPNG/jared.png" width="400"/>
   
 ## Lesson 02 - Grids & Iterative Patterns - Structured generative systems
 
@@ -208,11 +208,21 @@ How can pixel data (color, brightness, position) drive visual generation?
 
 For the pixel project I got the idea from an influencer on instagram. First step is using a picture of someone you would hang on your wall.
 
-<img src="Meryl.png" width="400"/>
+<img src="MediaPNG/Meryl.png" width="400"/>
 
 Third and fourth step is rearange the pixels.
 
-<img src="meryl(2).png" width="400"/>
+<img src="MediaPNG/Meryl(2).png" width="400"/>
+
+For the digital version I wanted to change the width of the image but at the begining I had the wrong idea of doing so. I was deviding the image through 4 (marked orange), or so i thought. Actually i was only dividing the canvas. So the canvas was getting smaller but not the image itself that's why in the end you can see the top right corner the grey background of the tiger.
+
+<img src="MediaPNG/ImageSizeWrong.png" width="400"/>
+
+In the second attempt i made the canvas smaller and to guarantee that the image always fits the canva we add this part of code: image(img, 0, 0, width, height);
+
+<img src="MediaPNG/ImageSizeRight.png" width="400"/>
+
+After that I wanted 
 
 # Project Idea
 
