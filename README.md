@@ -208,11 +208,11 @@ How can pixel data (color, brightness, position) drive visual generation?
 
 For the pixel project I got the idea from an influencer on instagram. First step is using a picture of someone you would hang on your wall.
 
-<img src="/meryl.png" width="400"/>
+<img src="Meryl.png" width="400"/>
 
 Third and fourth step is rearange the pixels.
 
-<img src="/meryl(2).png" width="400"/>
+<img src="meryl(2).png" width="400"/>
 
 # Project Idea
 
