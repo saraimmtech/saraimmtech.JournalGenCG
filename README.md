@@ -243,8 +243,89 @@ It’s interactive and personal — visualizing emotions is always fascinating, 
 
 ## First Prototype
 
-To help me visualize in what i wanna go I started with a simple canvas where i can put in emotions, depending on the word a different "plant" is growing in the canvas
+To help me visualize in what i wanna go I started with a simple canvas where i can put in emotions, depending on the word a different "plant" is growing in the canvas.
 
 {% raw %} <iframe src="https://editor.p5js.org/trisaratops2.0/full/6MoSRjm5T" width="100%" height="450" frameborder="no"></iframe> {% endraw %}
+
+### Explanations of key codes
+
+**let plants = [];**
+This array stores all the emotion-plants the user creates.
+Each new word becomes a new instance of the EmotionPlant class.
+
+**button.mousePressed(() => addEmotion(input.value()));**
+Links the button to the emotion-creation system.
+When the user clicks Grow, the word they typed is processed and turned into a plant.
+
+**getMoodScore(word)**
+This function classifies the user’s emotion word into a mood score:
+1 → positive
+0.5 → neutral
+0 → negative
+This single score determines color, shape, and growth behavior.
+
+**plants.push(new EmotionPlant(word, moodScore));**
+Creates a new plant object and adds it to the world.
+Every plant is independent and grows each animation frame.
+
+**class EmotionPlant { ... }**
+Encapsulates all the logic for representing emotions visually.
+Each plant stores:
+where it appears
+its color
+its growth size
+its shape behavior
+
+**getColor()**
+Maps emotion intensity to color:
+red → negative
+yellow → neutral
+blue → positive
+Color becomes a visual cue for emotional tone.
+
+**grow()**
+Runs every frame and determines:
+how the plant is drawn (chaotic / balanced / smooth)
+how fast and in what direction it grows
+This makes the sketch feel alive — each emotion keeps evolving on its own.
+
+### Improvements on the Emotinal Logic
+
+**Weigted emotional dictionary**
+Instead of classifying words as only positive/neutral/negative, i'm giving them each a score between 0-1.
+
+let emotionMap = {
+  happy: 0.9,
+  calm: 0.7,
+  bored: 0.3,
+  anxious: 0.1,
+  angry: 0.05
+};
+
+**Partial matching**
+Let's words like "happier", "angriness", "stressfull" still be recognized:
+
+if (word.includes("stress")) return 0.1;
+if (word.includes("happy")) return 0.9;
+
+**Intensifiers**
+Giving Adjectives more value and letting them affecting the plant:
+
+
+if (word.includes("very")) score += 0.1;
+if (word.includes("slightly")) score -= 0.1;
+
+With these adjustments current state looks like this:
+
+{% raw %} <iframe src="https://editor.p5js.org/trisaratops2.0/full/qzwCd8oHs" width="100%" height="450" frameborder="no"></iframe> {% endraw %}
+
+Now the machine reconises adjectives.
+
+### Improvments of Visuals
+
+### Improvment of Mood Categories
+
+### Improvment User Interactions
+
 
 
