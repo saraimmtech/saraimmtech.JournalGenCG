@@ -322,7 +322,11 @@ if (word.includes("slightly")) score -= 0.1;
 
 ## Prototype 3
 
+{% raw %} <iframe src="https://editor.p5js.org/trisaratops2.0/full/lzCFzuMod" width="100%" height="450" frameborder="no"></iframe> {% endraw %}
+
 ### Improvments of Visuals
+
+Since a human beings emotion can't just be pushed into 3 catories and a Matthew reminded me of the movie inside out, i wanted to implement that into the project to improve the visual.
 
 ## Prototype 4
 
